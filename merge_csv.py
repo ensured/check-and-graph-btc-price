@@ -9,8 +9,10 @@ import pandas as pd
 # get computer name
 user = getpass.getuser()
 
+# get current working directory
+cwd = os.getcwd()
 # create directory for all merged data to go
-os.makedirs("C:\\Users\\" + user + "\\Desktop\\btc\\merged_data", exist_ok=True)
+os.makedirs(f"{cwd}\\merged_data", exist_ok=True)
 
 # datetime stuff
 now = datetime.datetime.now()
