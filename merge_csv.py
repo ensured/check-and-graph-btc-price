@@ -21,7 +21,7 @@ dt_now = datetime.datetime.today()
 date = str(dt_now.year) + "-" + str(dt_now.month) + "-" + str(dt_now.day)
 
 # read all .scv files from this path
-dir = Path("C:\\Users\\" + user + "\\Desktop\\btc\\all_data")
+dir = Path(f"{cwd}\\all_data")
 
 # read all .scv files
 df = (pd.read_csv(f, names=["DATE", "TIME", "PRICE"]) for f in dir.glob("*.csv"))
