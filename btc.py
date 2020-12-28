@@ -6,8 +6,10 @@ import getpass
 
 user = getpass.getuser()
 
-os.makedirs("C:\\Users\\" + user + "\\Desktop\\btc\\all_data", exist_ok=True)
-btc_data_path = "C:\\Users\\" + user + "\\Desktop\\btc\\all_data"
+# get current working directy
+cwd = os.getcwd()
+os.makedirs(f"{cwd}\\all_data", exist_ok=True)
+btc_data_path = f"{cwd}\\all_data"
 
 
 def GET_RATES():
