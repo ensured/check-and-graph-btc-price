@@ -27,7 +27,7 @@ dir = Path(f"{cwd}\\all_data")
 df = (pd.read_csv(f, names=["DATE", "TIME", "PRICE"]) for f in dir.glob("*.csv"))
 
 # concatenation
-all_data = pd.concat(df, sort=True, ignore_index=True)
+all_data = pd.concat(df, ignore_index=True)
 
 # merge all concatenated data to single csv
 all_data.to_csv(f"merged_data\\btc_all_data__{date}__{f_now}.csv")
