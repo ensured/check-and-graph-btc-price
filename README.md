@@ -2,3 +2,5 @@
     and logs it to a .csv file.
     
     merge_csv.py merges all csv data in all_data folder to a single csv saved in merged_data folder
+    
+    plot all data
