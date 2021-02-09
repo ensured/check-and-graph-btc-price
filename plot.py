@@ -1,6 +1,5 @@
 import pandas as pd
 import matplotlib.pyplot as plt
-import matplotlib
 import matplotlib.style
 import datetime
 
@@ -13,10 +12,10 @@ date = str(dt_now.year) + "-" + str(dt_now.month) + "-" + str(dt_now.day)
 
 def count_lines():
     num_lines = sum(1 for line in open(f"merged_data\\btc_all_data__{date}.csv"))
-    return f"line count: {num_lines}"
+    print(f"line count: {num_lines}")
 
 
-print(count_lines())
+count_lines()
 
 plt.style.use("dark_background")
 
