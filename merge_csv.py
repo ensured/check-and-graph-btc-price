@@ -3,10 +3,7 @@ import getpass
 import glob
 import os
 from pathlib import Path
-
-
 import pandas as pd
-from pandas.core.indexes.base import Index
 
 # get computer name
 user = getpass.getuser()
